@@ -24,7 +24,7 @@
                 <th>Código de Barra</th>
                 <th>Valor de Compra</th>
                 <th>Valor de Venda</th>
-                <th>Categoria ID</th>
+                <th>Categoria</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -40,7 +40,7 @@
                     <td>{{ $produto->id_barra }}</td>
                     <td>{{ $produto->valor_compra }}</td>
                     <td>{{ $produto->valor_venda }}</td>
-                    <td>{{ $produto->categoria_id }}</td>
+                    <td>{{ $produto->categoria->nome }}</td>
                     <td>
                         <a href="/produto/editar/{{ $produto->id }}">
                             Editar

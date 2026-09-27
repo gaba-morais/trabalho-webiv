@@ -89,13 +89,17 @@
 
         <br><br>
 
-        <label for="categoria_id">Categoria ID:</label>
-        <input
-            type="number"
-            id="categoria_id"
-            name="categoria_id"
-            value="{{ isset($produto) ? $produto->categoria_id : '' }}"
-        >
+        <label for="categoria_id">Categoria:</label>
+        <select id="categoria_id" name="categoria_id">
+            @foreach ($categorias as $categoria)
+                <option
+                    value="{{ $categoria->id }}"
+                    {{ isset($produto) && $produto->categoria_id == $categoria->id ? 'selected' : '' }}
+                >
+                    {{ $categoria->nome }}
+                </option>
+            @endforeach
+        </select>
 
         <br><br>
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
 use App\Models\Produto;
 use Illuminate\Http\Request;
 
@@ -9,14 +10,16 @@ class ProdutoController extends Controller
 {
     public function listar()
     {
-        $produtos = Produto::all();
+        $produtos = Produto::with('categoria')->get();
 
         return view('produto.listagem_produto', compact('produtos'));
     }
 
     public function novo()
     {
-        return view('produto.formulario_produto');
+        $categorias = Categoria::orderBy('nome')->get();
+
+        return view('produto.formulario_produto', compact('categorias'));
     }
 
     public function salvar(Request $request)
@@ -44,8 +47,9 @@ class ProdutoController extends Controller
     public function editar($id)
     {
         $produto = Produto::find($id);
+        $categorias = Categoria::orderBy('nome')->get();
 
-        return view('produto.formulario_produto', compact('produto'));
+        return view('produto.formulario_produto', compact('produto', 'categorias'));
     }
 
     public function excluir($id)
