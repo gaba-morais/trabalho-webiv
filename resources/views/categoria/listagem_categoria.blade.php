@@ -9,6 +9,8 @@
 
     <h1>Lista de Categorias</h1>
 
+    <a href="/">Início</a>
+    |
     <a href="/categoria/novo">Nova Categoria</a>
 
     <br><br>

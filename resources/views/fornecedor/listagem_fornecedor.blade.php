@@ -9,6 +9,8 @@
 
     <h1>Lista de Fornecedores</h1>
 
+    <a href="/">Início</a>
+    |
     <a href="/fornecedor/novo">Novo Fornecedor</a>
 
     <br><br>

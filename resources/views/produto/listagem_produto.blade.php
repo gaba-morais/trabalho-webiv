@@ -9,6 +9,8 @@
 
     <h1>Lista de Produtos</h1>
 
+    <a href="/">Início</a>
+    |
     <a href="/produto/novo">Novo Produto</a>
 
     <br><br>

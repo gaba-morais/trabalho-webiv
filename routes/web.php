@@ -5,6 +5,10 @@ use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\FornecedorController;
 use App\Http\Controllers\ProdutoController;
 
+Route::get('/', function () {
+    return view('home');
+});
+
 Route::get('/categoria/listar', [CategoriaController::class, 'listar']);
 Route::get('/categoria/novo', [CategoriaController::class, 'novo']);
 Route::post('/categoria/salvar', [CategoriaController::class, 'salvar']);
