@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/produto.css') }}">
 </head>
 <body>
-
+    <header>
     <h1>Cadastro de Produto</h1>
-
+    </header>
     <form action="/produto/salvar" method="POST">
 
         @csrf
@@ -16,7 +19,7 @@
         @if (isset($produto))
             <input type="hidden" name="id" value="{{ $produto->id }}">
         @endif
-
+        <div class="form-campo">
         <label for="nome">Nome:</label>
         <input
             type="text"
@@ -24,9 +27,8 @@
             name="nome"
             value="{{ isset($produto) ? $produto->nome : '' }}"
         >
-
-        <br><br>
-
+        </div>
+        <div class="form-campo">
         <label for="embalagem">Embalagem:</label>
         <input
             type="text"
@@ -34,9 +36,8 @@
             name="embalagem"
             value="{{ isset($produto) ? $produto->embalagem : '' }}"
         >
-
-        <br><br>
-
+        </div>
+        <div class="form-campo">
         <label for="qtde_maxima">Quantidade Máxima:</label>
         <input
             type="number"
@@ -44,9 +45,8 @@
             name="qtde_maxima"
             value="{{ isset($produto) ? $produto->qtde_maxima : '' }}"
         >
-
-        <br><br>
-
+        </div>
+        <div class="form-campo">
         <label for="qtde_estoque">Quantidade em Estoque:</label>
         <input
             type="number"
@@ -54,9 +54,8 @@
             name="qtde_estoque"
             value="{{ isset($produto) ? $produto->qtde_estoque : '' }}"
         >
-
-        <br><br>
-
+        </div>
+        <div class="form-campo">
         <label for="id_barra">Código de Barra:</label>
         <input
             type="text"
@@ -64,9 +63,8 @@
             name="id_barra"
             value="{{ isset($produto) ? $produto->id_barra : '' }}"
         >
-
-        <br><br>
-
+        </div>
+        <div class="form-campo">
         <label for="valor_compra">Valor de Compra:</label>
         <input
             type="number"
@@ -75,9 +73,8 @@
             name="valor_compra"
             value="{{ isset($produto) ? $produto->valor_compra : '' }}"
         >
-
-        <br><br>
-
+        </div>
+        <div class="form-campo">
         <label for="valor_venda">Valor de Venda:</label>
         <input
             type="number"
@@ -86,9 +83,8 @@
             name="valor_venda"
             value="{{ isset($produto) ? $produto->valor_venda : '' }}"
         >
-
-        <br><br>
-
+          </div>
+        <div class="form-campo">
         <label for="categoria_id">Categoria:</label>
         <select id="categoria_id" name="categoria_id">
             @foreach ($categorias as $categoria)
@@ -100,16 +96,15 @@
                 </option>
             @endforeach
         </select>
+        </div>
 
-        <br><br>
-
-        <button type="submit">Salvar</button>
+        <button class="btn-salvar" type="submit">Salvar</button>
 
     </form>
 
     <br>
 
-    <a href="/produto/listar">Voltar para lista</a>
+    <a class="btn-voltar" href="/produto/listar"><i class="fa-solid fa-circle-arrow-left"></i> Voltar para lista</a>
 
 </body>
 </html>

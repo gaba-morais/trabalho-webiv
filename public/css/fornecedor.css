@@ -1,0 +1,22 @@
+header{
+background-color: var(--cor-azul);
+border-color: var(--azul-escuro);
+}
+
+form{
+background-color: #0e9bbd;
+border-color: #083C51;
+}
+
+.form-campo{
+background-color: #78c2ff;
+}
+
+.btn-salvar{
+background-color: #A28F6A;
+color: white;
+}
+
+.btn-voltar{
+background-color: var(--cor-azul);
+}

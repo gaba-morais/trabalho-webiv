@@ -1,0 +1,29 @@
+header{
+background-color: var(--cor-laranja);
+border-color: var(--laranja-escuro);
+}
+
+
+
+
+
+
+form{
+border: solid 2px #c65a2e;
+background-color:  #f2c6a0;
+color: #1f2937;
+}
+
+.form-campo{
+background-color: ;
+}
+
+.btn-salvar{
+background-color: #1f2937;
+color: white;
+}
+
+
+.btn-voltar{
+background-color: var(--cor-laranja);
+}

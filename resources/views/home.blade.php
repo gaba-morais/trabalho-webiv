@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
 </head>
-<body>
-
+<header>
     <h1>Cadastro</h1>
-
-    <ul>
-        <li><a href="/categoria/listar">Categorias</a></li>
-        <li><a href="/fornecedor/listar">Fornecedores</a></li>
-        <li><a href="/produto/listar">Produtos</a></li>
-    </ul>
+</header>
+    <main>
+        <div><a id="btn1" class="btn" href="/categoria/listar">Categorias</a></div>
+        <div><a id="btn2" class="btn" href="/fornecedor/listar">Fornecedores</a></div>
+        <div><a id="btn3" class="btn" href="/produto/listar">Produtos</a></div>
+    </main>
 
 </body>
 </html>

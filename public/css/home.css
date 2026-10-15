@@ -1,0 +1,32 @@
+main {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+padding: 30px;
+display: grid;
+
+margin-block: 50px;
+}
+
+.btn{
+text-decoration: none;
+color:white;
+padding: 10px;
+border-radius: 5px;
+}
+
+#btn1{
+background-color: #00cc5c;
+border:solid 2px #009443;
+
+}
+
+#btn2{
+background-color: #00579e;
+border:solid 2px #00335e;
+}
+
+#btn3{
+background-color: #ff8b1f;
+border:solid 2px #c26610;
+}
