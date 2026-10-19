@@ -17,6 +17,15 @@ background-color: #A28F6A;
 color: white;
 }
 
+.btn-salvar:hover{
+background-color: #1042d6;
+
+}
+
 .btn-voltar{
 background-color: var(--cor-azul);
+}
+
+.btn-voltar:hover{
+background-color: var(--azul-escuro);
 }

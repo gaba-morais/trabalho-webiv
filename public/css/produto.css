@@ -3,11 +3,6 @@ background-color: var(--cor-laranja);
 border-color: var(--laranja-escuro);
 }
 
-
-
-
-
-
 form{
 border: solid 2px #c65a2e;
 background-color:  #f2c6a0;
@@ -15,7 +10,7 @@ color: #1f2937;
 }
 
 .form-campo{
-background-color: ;
+background-color: #ffe9d6;
 }
 
 .btn-salvar{
@@ -23,7 +18,15 @@ background-color: #1f2937;
 color: white;
 }
 
+.btn-salvar:hover{
+background-color: #f38100;
+}
+
 
 .btn-voltar{
 background-color: var(--cor-laranja);
+}
+
+.btn-voltar:hover{
+background-color: var(--laranja-escuro);
 }

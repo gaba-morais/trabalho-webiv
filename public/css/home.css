@@ -1,11 +1,10 @@
-main {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
+.botoes {
+display: flex;
+flex-direction: row;
 gap: 20px;
 padding: 30px;
-display: grid;
-
 margin-block: 50px;
+
 }
 
 .btn{
@@ -13,12 +12,17 @@ text-decoration: none;
 color:white;
 padding: 10px;
 border-radius: 5px;
+box-shadow: 1px 1px 1px black;
 }
+
 
 #btn1{
 background-color: #00cc5c;
 border:solid 2px #009443;
+}
 
+#btn1:hover{
+background-color: #00612b;
 }
 
 #btn2{
@@ -26,7 +30,17 @@ background-color: #00579e;
 border:solid 2px #00335e;
 }
 
+#btn2:hover{
+background-color: #002e53;
+}
+
+
 #btn3{
 background-color: #ff8b1f;
 border:solid 2px #c26610;
+}
+
+#btn3:hover{
+background-color: #9f4e02;
+
 }

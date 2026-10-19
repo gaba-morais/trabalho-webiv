@@ -11,9 +11,11 @@
     <h1>Cadastro</h1>
 </header>
     <main>
-        <div><a id="btn1" class="btn" href="/categoria/listar">Categorias</a></div>
-        <div><a id="btn2" class="btn" href="/fornecedor/listar">Fornecedores</a></div>
-        <div><a id="btn3" class="btn" href="/produto/listar">Produtos</a></div>
+        <div class="botoes">
+            <div><a id="btn1" class="btn" href="/categoria/listar">Categorias</a></div>
+            <div><a id="btn2" class="btn" href="/fornecedor/listar">Fornecedores</a></div>
+            <div><a id="btn3" class="btn" href="/produto/listar">Produtos</a></div>
+        </div>
     </main>
 
 </body>

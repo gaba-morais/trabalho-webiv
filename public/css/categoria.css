@@ -27,9 +27,13 @@ background-color: var(--verde-escuro);
 
 .btn-salvar{
 margin-block: 10px;
-background-color: #2E6F40;;
+background-color: #2E6F40;
 color: white;
 padding: 10px;
 border-radius: 5px;
 border: none;
+}
+
+.btn-salvar:hover{
+background-color: #27bd51;
 }
